@@ -2,7 +2,7 @@ import { promisify } from 'util'
 import jwt from 'jsonwebtoken'
 import User from '../model/userModel.js'
 import catchAsync from '../utils/catchAsync.js'
-import AppError from '../utils/appError.js'
+import AppError from '../utils/AppError.js'
 
 const protectRoutes = catchAsync(async (req, res, next) => {
     let token

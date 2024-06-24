@@ -1,4 +1,4 @@
-import { IoLogOutOutline } from "react-icons/io5";
+import LogoutButton from "./LogoutButton";
 
 export const Header = () => {
   return (
@@ -6,7 +6,7 @@ export const Header = () => {
       <div className="flex-1">
         <a className="btn btn-ghost text-xl">Quiz App</a>
       </div>
-      <IoLogOutOutline />
+      <LogoutButton />
       {/* <div className="flex-none">
         <button className="btn btn-square btn-ghost">
           <svg

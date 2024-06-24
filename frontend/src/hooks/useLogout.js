@@ -11,12 +11,14 @@ const useLogout = () => {
     const logout = async () => {
         setLoading(true);
         try {
-            const res = await axios.post('/api/v1/auth/logout',
+            const res = await axios.get('/api/v1/auth/logout',
                 {},
                 { withCredentials: true }
             )
 
             setAuthUser(null);
+
+            toast.success("Successfully logged out!")
         } catch (error) {
             toast.error(error.message);
         } finally {
